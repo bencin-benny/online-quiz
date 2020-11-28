@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Login Page</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+<body>
+
+<nav class="navbar navbar-light" style="background:rgba(230,233,249,0.2);">
+  <a class="navbar-brand" href="#">
+    <img src="nms.png" width="200" height="100" class="d-inline-block align-top" alt="" loading="lazy">
+   
+  </a>
+  
+			<p><h1 align=center><br><b>Login</b></h1></p>
+			<svg width="8em" height="5em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="Mediumblue" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg>
+		
+</nav>
+<form name="loginForm" method="post" action="instruction.html">
+
+<div class="login-page">
+ <div class="form">
+
+<h3>Username:</h3>
+<input type="text" name="userid" id="userid" size=25/>
+<h3>Password:</h3>
+<input type="password" name="pwd" size=25 id="pass"/>
+    
+
+
+
+
+
+<br><br>
+
+<input type="submit" onclick= "createLink(); return check(this.form) " value="Login"/>
+<input type="Reset"/>
+
+</div>
+</div>
+</form>
+<script language="javascript">
+
+function createLink()
+{
+var textvalue=document.getElementById("userid").value;
+localStorage.setItem("mnane",textvalue);
+}
+function check(form)
+{
+
+if(form.pwd.value == "123456")
+{
+	return true;
+	
+}
+else
+{
+	alert("Error Password or Username")
+	return false;
+}
+}
+
+
+</script>
+
+</body>
+</html>-

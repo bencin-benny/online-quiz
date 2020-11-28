@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Instruction Page</title>
+	 <meta name="VIEWPORT" content ="WIDTH=DEVICE-WIDTH,INITIAL-SCALE=1">
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	 
+</head>
+<body onload="f1();getname();">
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+  <a class="navbar-brand" href="#">
+    <img src="nms.png" width="200" height="100" class="d-inline-block align-top" alt="" loading="lazy">
+   
+  </a>
+  <center>
+			<h1><p style= font-size:40px;> Welcome </p> </h1>
+      <h2><p style=font-size:25px;><span id ="result"></span></p></h2>
+
+      
+			
+    </center>
+    <script>
+      document.getElementById("result").innerHTML=localStorage.getItem("mnane");
+  </script>
+</nav>
+<br>
+<h1 align=center><b>Test Instruction</b></h1>
+<h2 align=center><b>Read Instructions Carefully</b></h2>
+<p>
+
+
+<ul>
+
+<li><b>Candidate should follow the Instructions and volunteer instruction.</b></li><br>
+<li>There are Multiple Choice Questions and Multiple select Questions</li><br>
+<li>Each Question carries <b>1 mark</b> and <b>0.25 negative mark </b>for wrong answers.</li><br>
+
+<li>Remaining time will be displayed on top.</li><br>
+
+<li>Duration: <b>10 mins</b> for each section.</li><br>
+
+ <li>Click next to get the next question.</li><br>
+
+ <li>After submitting all the 10 questions, click on "End Test".</li><br>
+
+<li>Once the test commences, leaving the test environment will lead to an automatic submission.You won't be able to proceed further.</li><br>
+<li>You are NOT allowed to open any other Browser/Switch between the test screen and other windows/ minimize the test window. <br>The test will automatically log out if a candidate switches through windows while taking the test.</li><br>
+
+<li>Books and electronic gadgets are not allowed.</li><br>
+
+</ul>
+</p>
+<div align=center>
+<a href="box.html">
+<button style="height:25px; width:150px; background-color:limegreen" type="button">Start Test</button></a></br></br>
+</div>
+</body>
+
+</html>
